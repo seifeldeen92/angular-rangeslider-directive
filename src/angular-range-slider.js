@@ -274,10 +274,7 @@
 
               newValue = roundStep(newValue, parseInt(scope.precision), parseFloat(scope.step), parseFloat(scope.floor));
               scope.local[currentRef] = newValue;
-
-              if (!scope.dragstop) {
-                scope[currentRef] = newValue;
-              }
+              scope[currentRef] = newValue;
 
               setPointers();
               scope.$apply();
